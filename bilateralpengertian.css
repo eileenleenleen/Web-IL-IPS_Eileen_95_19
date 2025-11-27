@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url(bgweb.jpg);
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+/* Header */
+.header {
+    background-color: transparent;
+    padding: 0px; 
+}
+
+/* Topnav */
+.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+    background: rgba(61, 211, 196, 0.28);
+    padding: 25px 40px;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+
+.topnav a {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 12px 50px;
+    background: linear-gradient(45deg, #5ccde6, #1cc2bd);
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.topnav a:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.topnav a.special {
+    background: linear-gradient(45deg, #6130ff, #ff9f5a);
+}
+.topnav a {
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/* Column */
+.column {
+float: left;
+padding: 10px;
+box-sizing: border-box;
+}
+
+
+.column.side {
+width: 25%;
+}
+
+.column.middle {
+width: 50%;
+background-color: rgba(148, 244, 230, 0.5);
+border-radius: 15px;
+}
+
+.column.side.kanan {
+width: 20%;
+ 
+}
+
+.intro-section1{
+    padding-left: 10px;
+}
+
+.autro-section1{
+    padding-left: 10px;
+}
+
+.judulmiddle {
+    font-family: 'Fredoka One', cursive;
+    color: #000000;
+}
+/* Footer */
+.footer {
+background-image: url(bgfooter.jpg);
+padding: 10px;
+text-align: center;
+clear: both;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+
+.row::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* img */
+img.indjpn,.indphili, .indrus,.indaus{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    transition: transform 0.35s ease; box-shadow: 0.35s ease;
+}
+img.indjpn:hover,.indphili:hover,.indrus:hover,.indaus:hover{
+animation: imageBounce 0.45s ease forwards;
+    transform: translateY(-10px) scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+div.indjpnkiri,.indphilikiri{
+    background-color: #6fcbb7;
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+}
+div.indruskanan,.indauskanan{
+    background-color: #6fcbb7;
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+}
+
+
+
+/* dropdown */
+ul{
+    list-style-type: none;
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+}
+li.navbar{
+    float: left;
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding:14px 16px;
+    text-align: none;
+}
+
+.dropdown-content{
+    display:none;
+    position: absolute;
+    width: 85px;
+    z-index: 1;
+  
+}
+
+.dropdown-content a{
+    color: rgb(250, 250, 250);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+li a, .active{
+    color: rgb(135, 223, 212);
+}
+
+li a:hover, .dropdown:hover, .dropbtn{
+    color: rgb(255, 255, 255);
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding:14px 16px;
+    text-align: none;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    width: auto;
+    z-index: 1;
+    
+}
+
+.dropdown-content a{
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+li.dropdown{
+    display: inline-block;
+}
+
